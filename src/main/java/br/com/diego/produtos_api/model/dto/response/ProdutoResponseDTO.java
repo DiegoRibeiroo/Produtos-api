@@ -1,5 +1,6 @@
 package br.com.diego.produtos_api.model.dto.response;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,6 +9,7 @@ import java.time.OffsetDateTime;
 
 @Getter
 @Setter
+@Builder
 public class ProdutoResponseDTO {
     private Long id;
     private String nome;
