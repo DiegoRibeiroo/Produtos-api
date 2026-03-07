@@ -17,7 +17,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/produtos")
+@RequestMapping("/produtos")
 @RequiredArgsConstructor
 @Tag(name = "Produtos", description = "Endpoints para gerenciamento de produtos e estoque")
 public class ProdutosController {
