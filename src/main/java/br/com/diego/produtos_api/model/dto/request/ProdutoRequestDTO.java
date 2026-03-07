@@ -1,5 +1,6 @@
 package br.com.diego.produtos_api.model.dto.request;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -12,6 +13,7 @@ import java.math.BigDecimal;
 
 @Getter
 @Setter
+@Builder
 public class ProdutoRequestDTO {
     @NotBlank(message = "O nome do produto é obrigatório.")
     @Size(min = 2, max = 100, message = "O nome deve ter entre 2 e 100 caracteres.")
